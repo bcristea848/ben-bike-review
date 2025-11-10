@@ -9,7 +9,7 @@ body {
 	
 }
 header {
-	background-color: #2BA825;
+	background-color: #228B22;
 
 }
 
@@ -18,27 +18,28 @@ h1 {
 }
 
 h2 {
-	background-color: #C42EFA;
+	background: linear-gradient(to right, #6A5ACD, #32CD32);
 	padding: 10px;
 }
 
+
 div{
-	background-color: #0889FA;
-	color:background-color: #2BA825;
+	background-color: #3B9C9C;
+	color:#FFFAF0;
 	font-weight: bold;
 	font-size: 20px;
 	padding: 10px;
 }
 
 footer {
-	background-color: aqua;
+	background-color: #6B8E23;
 	font-size: .9em;
 	font-style: italic;
 
 }
 
 a:link {
-	color: #40E0D0;
+	color: #FFBF00;
 }
 
 a:visited {
@@ -69,3 +70,14 @@ th, td {
 th {
 	background-color: #FF474D;
 }
+
+
+.nav-link {
+  color: #00416A !important; /* Coral Red or any color you prefer */
+  font-weight: bold;
+}
+
+.nav-link:hover {
+  color: #568203 !important; /* Avocado Green or another contrast color */
+}
+
