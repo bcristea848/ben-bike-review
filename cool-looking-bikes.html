@@ -69,6 +69,53 @@
 						one road bike in a top ten list of legendary #models  A while back, we gave you a list of the 10 most #incredible  
 						#mountainbikes ever made; now, we do the same for road bikes.<p>
 					</td>
+					
+							
+	<body>          
+  <div id="quiz-container">
+    <h1>Bike Quiz</h1>
+    <p id="question">What makes a bike come to a stop</p>
+    <div id="options">
+      <input type="radio" name="answer" value="a" id="optionA"> <!-- 🔴 changed type to "radio" -->
+      <label for="optionA">A. Pedals</label><br>
+      
+      <input type="radio" name="answer" value="b" id="optionB"> <!-- 🔴 changed type to "radio" -->
+      <label for="optionB">B. Brakes</label><br> <!-- 🔴 fixed spelling from "Breaks" to "Brakes" -->
+      
+      <input type="radio" name="answer" value="c" id="optionC"> <!-- 🔴 changed type to "radio" -->
+      <label for="optionC">C. Tires</label><br>
+    </div>
+    <button onclick="checkAnswer()">Submit Answer</button>
+    <p id="feedback"></p>
+  </div>
+  
+  <script>
+    function checkAnswer() {
+      // Get the selected Answer
+      var selectedAnswer = document.querySelector('input[name="answer"]:checked');
+      
+      // 🔴 added null check before accessing .value
+      if (!selectedAnswer) {
+        document.getElementById('feedback').innerHTML = 'Please select an answer.';
+        return; // 🔴 added return to stop function if no answer
+      }
+      
+      // Check if an answer is selected
+      if (selectedAnswer.value === 'b') {
+        document.getElementById('feedback').innerHTML = 'Correct! 🔥';
+      } else {
+        document.getElementById('feedback').innerHTML = 'WRONG answer. Try again!';
+      }
+    }
+  </script>
+</body>
+
+
+ <!-- ABOVE where the red dots are is where I put the code into Copliot AI to fix it because it wasn't working! -->	
+	
+			
+				
+				
 				</tr>
 				<tr>
 					<td>
@@ -82,5 +129,6 @@
 		</main>
 		
 		</header>
+		
 
 </nav>
